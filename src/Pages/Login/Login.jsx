@@ -10,6 +10,7 @@ import { ToastContainer } from "react-toastify";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../Services/firebaseConfig";
+import EyesFull from '../../assets/Images/eye-fill.svg'
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -67,7 +68,12 @@ function Login() {
     }
     
 
-    
+    function RedefiniSenha() {
+        navigate('/ResetPassword')
+    }
+    function teste() {
+        navigate('/Profile')
+    }
     const Registrar = () => {
         navigate('/register');
     };
@@ -75,7 +81,7 @@ function Login() {
     return (
         <>
             <ToastContainer />
-            <form className={Styles.container} onSubmit={RealizarLogin}>
+            <form className={Styles.container}>
                 <div className={Styles.Alinhamento}>
                     <div className={Styles.title}>
                         <h1>PARKING</h1>
@@ -86,17 +92,23 @@ function Login() {
                             <h1>Acesse o sistema</h1>
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="E-mail"
+                                value={email}
                                 onChange={(e) => setEmail(e.target.value)}
+                                autoComplete="email" 
                             />
                             <input
                                 type="password"
+                                name="password"
                                 placeholder="Senha"
+                                value={password}
                                 onChange={(e) => setPassword(e.target.value)}
+                                autoComplete="current-password"
                             />
-                            <button className={Styles.BtnEsqueceuSenha}>Esqueceu a senha?</button>
+                            <button className={Styles.BtnEsqueceuSenha} onClick={RedefiniSenha}>Esqueceu a senha?</button>
                             <br />
-                            <button type="submit" className={Styles.BtnEntrar}>Entrar</button>
+                            <button type="submit" onClick={RealizarLogin} className={Styles.BtnEntrar}>Entrar</button>
                             <button
                                 type="button"
                                 className={Styles.BtnGoogle}

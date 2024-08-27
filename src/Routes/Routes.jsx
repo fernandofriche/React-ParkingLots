@@ -6,6 +6,7 @@ import RegisterCar from '../Pages/RegisterCar/RegisterCar.jsx'
 import Profile from '../Pages/Profile/Profile.jsx'
 import HomePage from '../Pages/HomePage/HomePage.jsx';
 import Detalhes from '../Pages/Detalhes/Detalhes.jsx'
+import ResetPassword from '../Pages/ResetPassword/ResetPassword.jsx'
 
 function AppRoutes() {
   return (
@@ -17,7 +18,7 @@ function AppRoutes() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/detalhes/:id" element={<Detalhes />} />
-
+        <Route path="/ResetPassword" element={<ResetPassword />} />
       </Routes>
     </Router>
   );

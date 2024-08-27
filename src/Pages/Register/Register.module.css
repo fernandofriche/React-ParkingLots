@@ -37,7 +37,7 @@
     margin: 25%;
     background-color: #F4F4F4;
     width: 20%;
-    height: 85%;
+    height: 75%;
     border-radius: 20px;
     justify-content: center;
     text-align: center;
@@ -107,7 +107,7 @@
     font-size: 15px;
 }
 
-.BtnRegistrar:hover {
+.BtnRegistrar:hover, .BtnVoltar:hover {
     color: #23D45F;
     transition: 0.3s ease;
 }
