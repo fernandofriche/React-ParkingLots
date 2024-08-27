@@ -1,0 +1,164 @@
+{
+  "parkingLots": [
+    {
+      "id": 1,
+      "name": "Estacionamento Central",
+      "description": "Localizado no coração da cidade, ideal para quem trabalha no centro.",
+      "userRating": 4.5,
+      "hourlyRate": 25.00,
+      "image": "/src/assets/Cards/Central.svg"
+    },
+    {
+      "id": 2,
+      "name": "Estacionamento Shopping",
+      "description": "Conectado ao shopping, oferece vagas cobertas e segurança 24 horas.",
+      "userRating": 4.7,
+      "hourlyRate": 5.00,
+      "image": "/src/assets/Cards/Shopping.svg"
+    },
+    {
+      "id": 3,
+      "name": "Estacionamento Aeroporto",
+      "description": "Convenientemente localizado ao lado do aeroporto, com serviço de traslado gratuito.",
+      "userRating": 4.2,
+      "hourlyRate": 20.00,
+      "image": "/src/assets/Cards/Aeroporto.svg"
+    },
+    {
+      "id": 4,
+      "name": "Estacionamento Praia",
+      "description": "Perto da praia, perfeito para quem quer curtir o dia sem preocupações.",
+      "userRating": 4.8,
+      "hourlyRate": 10.00,
+      "image": "/src/assets/Cards/Praia.svg"
+    },
+    {
+      "id": 5,
+      "name": "Estacionamento Hospital",
+      "description": "Ao lado do hospital, ideal para quem precisa de fácil acesso.",
+      "userRating": 4.1,
+      "hourlyRate": 15.00,
+      "image": "/src/assets/Cards/Hospital.svg"
+    },
+    {
+      "id": 6,
+      "name": "Estacionamento Estádio",
+      "description": "Perto do estádio, ótimo para dias de jogos ou eventos.",
+      "userRating": 4.6,
+      "hourlyRate": 25.00,
+      "image": "/src/assets/Cards/Estadio.svg"
+    },
+    {
+      "id": 7,
+      "name": "Estacionamento Universidade",
+      "description": "Estacionamento dedicado para estudantes e professores.",
+      "userRating": 4.3,
+      "hourlyRate": 18.00,
+      "image": "/src/assets/Cards/Universidade.svg"
+    },
+    {
+      "id": 8,
+      "name": "Estacionamento Bairro",
+      "description": "Estacionamento acessível em uma área residencial tranquila.",
+      "userRating": 4.4,
+      "hourlyRate": 5.00,
+      "image": "/src/assets/Cards/Bairro.svg"
+    },
+    {
+      "id": 9,
+      "name": "Estacionamento Mercado",
+      "description": "Localizado ao lado do mercado, com preços acessíveis e vagas amplas.",
+      "userRating": 4.0,
+      "hourlyRate": 40.00,
+      "image": "/src/assets/Cards/Mercado.svg"
+    },
+    {
+      "id": 10,
+      "name": "Estacionamento Parque",
+      "description": "Junto ao parque, ótimo para passeios e caminhadas.",
+      "userRating": 4.9,
+      "hourlyRate": 18.00,
+      "image": "/src/assets/Cards/Parque.svg"
+    },
+    {
+      "id": 11,
+      "name": "Estacionamento Empresarial",
+      "description": "Perfeito para quem trabalha em escritórios e precisa de estacionamento seguro.",
+      "userRating": 4.7,
+      "hourlyRate": 45.00,
+      "image": "/src/assets/Cards/Empresarial.svg"
+    },
+    {
+      "id": 12,
+      "name": "Estacionamento Hotel",
+      "description": "Anexo ao hotel, oferecendo conveniência e segurança aos hóspedes.",
+      "userRating": 4.8,
+      "hourlyRate": 30.00,
+      "image": "/src/assets/Cards/Hotel.svg"
+    },
+    {
+      "id": 13,
+      "name": "Estacionamento Eventos",
+      "description": "Estacionamento temporário para eventos, com fácil acesso e ampla capacidade.",
+      "userRating": 4.5,
+      "hourlyRate": 40.00,
+      "image": "/src/assets/Cards/Eventos.svg"
+    },
+    {
+      "id": 14,
+      "name": "Estacionamento Porto",
+      "description": "Localizado próximo ao porto, ideal para trabalhadores e visitantes.",
+      "userRating": 4.2,
+      "hourlyRate": 40.00,
+      "image": "/src/assets/Cards/Porto.svg"
+    },
+    {
+      "id": 15,
+      "name": "Estacionamento Zona Norte",
+      "description": "Estacionamento amplo com segurança 24 horas na Zona Norte da cidade.",
+      "userRating": 4.3,
+      "hourlyRate": 20.00,
+      "image": "/src/assets/Cards/Norte.svg"
+    },
+    {
+      "id": 16,
+      "name": "Estacionamento Zona Sul",
+      "description": "Estacionamento moderno e seguro na Zona Sul, perto de grandes avenidas.",
+      "userRating": 4.6,
+      "hourlyRate": 38.00,
+      "image": "/src/assets/Cards/Aeroporto.svg"
+    },
+    {
+      "id": 17,
+      "name": "Estacionamento Cultural",
+      "description": "Localizado próximo a centros culturais, ideal para quem vai a shows e exposições.",
+      "userRating": 4.8,
+      "hourlyRate": 16.00,
+      "image": "/src/assets/Cards/Aeroporto.svg"
+    },
+    {
+      "id": 18,
+      "name": "Estacionamento Feiras",
+      "description": "Estacionamento temporário para feiras e exposições, com fácil acesso e segurança.",
+      "userRating": 4.5,
+      "hourlyRate": 20.00,
+      "image": "/src/assets/Cards/Aeroporto.svg"
+    },
+    {
+      "id": 19,
+      "name": "Estacionamento Subterrâneo",
+      "description": "Estacionamento subterrâneo com segurança reforçada e vigilância 24 horas.",
+      "userRating": 4.7,
+      "hourlyRate": 30.00,
+      "image": "/src/assets/Cards/Aeroporto.svg"
+    },
+    {
+      "id": 20,
+      "name": "Estacionamento Campo de Futebol",
+      "description": "Estacionamento amplo e seguro, ideal para quem frequenta campos de futebol na região.",
+      "userRating": 4.4,
+      "hourlyRate": 39.00,
+      "image": "/src/assets/Cards/Aeroporto.svg"
+    }
+  ]
+}

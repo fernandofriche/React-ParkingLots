@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+.container {
+    background-color: #23D45F;
+    min-height: 100vh;
+}
+
+.title h1 {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 150px;
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 25%;
+    text-align: end;
+    position: fixed;
+    ;
+}
+
+.Alinhamento {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.DivInputs {
+    display: flex;
+    position: fixed;
+    right: 0;
+    margin: 25%;
+    background-color: #F4F4F4;
+    width: 20%;
+    height: 85%;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.DivInputs h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 15%;
+}
+
+.DivInputs input {
+    border-radius: 10px;
+    border: solid 1px black;
+    padding: 2% 2%;
+    height: 59px;
+    width: 295px;
+    margin-top: 5%;
+}
+
+.DivInputs input:focus::placeholder {
+    color: #23D45F;
+}
+
+.DivInputs a {
+    color: black;
+    text-decoration: none;
+}
+
+.DivInputs a:hover {
+    color: #23D45F;
+    transition: 0.3s ease;
+}
+
+.BtnVoltar {
+    border: none;
+    margin-left: 60%;
+    margin-top: 5%;
+    background-color: #F4F4F4;
+    color: black;
+}
+
+.BtnEntrar {
+    background-color: #23D45F;
+    margin-top: 30%;
+    height: 59px;
+    width: 295px;
+    color: white;
+    border: none;
+    font-family: "Inter", sans-serif;
+    border-radius: 10px;
+    outline: none;
+    border: solid 1px #23D45F;
+}
+.BtnEntrar:focus{
+    border: solid 2px #23D45F;
+    
+}
+
+
+.BtnRegistrar {
+    border: none;
+    margin-top: 5%;
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 15px;
+}
+
+.BtnRegistrar:hover {
+    color: #23D45F;
+    transition: 0.3s ease;
+}
+
+.DivInputs p {
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+
+button:hover {
+    cursor: pointer;
+}

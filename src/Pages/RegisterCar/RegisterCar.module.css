@@ -1,0 +1,41 @@
+.Cabecalho{
+    background-color: #ffff;
+    min-height: 100vh;
+}
+
+.Cabecalho ul {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    gap: 70px;
+    position: fixed;
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    padding: 3% 2%;
+}
+
+.Cabecalho img {
+    margin-left: 10%;
+}
+
+.Cabecalho a {
+    text-decoration: none;
+    color: black;
+}
+
+.Cabecalho a:hover {
+    transition: 0.3s ease;
+}
+
+.Space {
+    width: 10%;
+}
+
+.Space2 {
+    width: 10%;
+}

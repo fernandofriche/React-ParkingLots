@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+@media only screen and (min-width: 1281px) {
+
+    .container {
+        background-color: #23D45F;
+        min-height: 100vh;
+    }
+
+    .title h1 {
+        font-family: "Londrina Solid", sans-serif;
+        font-weight: 400;
+        color: white;
+        font-size: 150px;
+    }
+
+    .title {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 25%;
+        text-align: end;
+        position: fixed;
+    }
+
+    .Alinhamento {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+
+    .DivInputs {
+        display: flex;
+        position: fixed;
+        right: 0;
+        margin: 25%;
+        background-color: #F4F4F4;
+        width: 20%;
+        height: 60%;
+        border-radius: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .DivInputs h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        margin-top: 15%;
+    }
+
+    .DivInputs input {
+        border-radius: 10px;
+        border: solid 1px black;
+        padding: 2% 2%;
+        height: 59px;
+        width: 295px;
+        margin-top: 5%;
+    }
+
+    .DivInputs input:active {
+        color: red;
+    }
+
+    .DivInputs input:focus::placeholder {
+        color: #23D45F;
+    }
+
+    .DivInputs a {
+        color: black;
+    }
+
+    .BtnEsqueceuSenha {
+        border: none;
+        margin-left: 40%;
+        margin-top: 5%;
+        background-color: #F4F4F4;
+        color: black;
+    }
+
+    .BtnEntrar {
+        background-color: #23D45F;
+        margin-top: 20%;
+        height: 59px;
+        width: 295px;
+        color: white;
+        border: none;
+        font-family: "Inter", sans-serif;
+        border-radius: 10px;
+        outline: none;
+        border: solid 1px #23D45F;
+    }
+
+    .BtnEntrar:focus {
+        border: solid 2px #23D45F;
+    }
+
+    .BtnEntrar:hover {
+        background-color: transparent;
+        color: #000;
+        border: solid 1px #23D45F;
+        transition: 0.5s ease-in-out;
+    }
+
+    .DivInputs p {
+        margin-top: 2%;
+    }
+
+    .BtnRegistrar {
+        border: none;
+        font-family: "Inter", sans-serif;
+        color: black;
+        font-size: 15px;
+        background-color: #F4F4F4;
+    }
+
+    .BtnRegistrar:hover,.BtnEsqueceuSenha:hover {
+        color: #23D45F;
+    }
+
+    .DivInputs p {
+        color: black;
+        font-family: "Inter", sans-serif;
+        font-size: 15px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    .BtnGoogle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        margin-left: 23%;
+        margin-top: 5%;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #757575;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .BtnGoogle:hover {
+        background-color: #f5f5f5;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .BtnGoogle img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 575px) {
+
+    .Alinhamento {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        font-family: "Londrina Solid", sans-serif;
+        font-size: 30px;
+        color: white;
+    }
+
+    img {
+        width: 70px;
+    }
+
+    .DivInputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+        border-radius: 10px;
+        width: 90%;
+        height: 370px;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    .DivInputs h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        margin-top: 5%;
+    }
+
+    .DivInputs input {
+        border-radius: 10px;
+        border: solid 1px #1B2D8D;
+        padding: 2% 2%;
+        height: 39px;
+        width: 195px;
+        margin-top: 5%;
+    }
+
+    .BtnEsqueceuSenha {
+        border: none;
+        margin-left: 25%;
+        margin-top: 2%;
+        background-color: #F4F4F4;
+    }
+
+    .DivBtnGoogle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .BtnGoogle {
+        height: 49px;
+        width: 195px;
+        margin-top: 5%;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #757575;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .BtnGoogle:hover {
+        background-color: #f5f5f5;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .BtnGoogle img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .BtnEntrar {
+        background-color: #23D45F;
+        margin-top: 5%;
+        height: 39px;
+        width: 195px;
+        color: white;
+        border: none;
+        font-family: "Inter", sans-serif;
+        border-radius: 10px;
+        outline: none;
+        border: solid 1px #23D45F;
+    }
+
+    .DivInputs p {
+        color: black;
+        font-family: "Inter", sans-serif;
+        font-size: 15px;
+    }
+
+    .BtnRegistrar {
+        border: none;
+        margin-top: 5%;
+        font-family: "Inter", sans-serif;
+        color: black;
+        font-size: 15px;
+        background-color: #F4F4F4;
+    }
+}
