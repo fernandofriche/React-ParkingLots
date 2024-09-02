@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Styles from './Detalhes.module.css';
 import Logo from '../../assets/Images/Logo2.png';
 import CircleUser from '../../assets/Images/CircleUser.png';
 
 function Detalhes() {
     const { id } = useParams();
+    const navigate = useNavigate();
     const [parkingLot, setParkingLot] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [nome, setNome] = useState("");
+    const [cidade, setCidade] = useState("");
+    const [telefone, setTelefone] = useState("");
+    const [modelo, setModelo] = useState("");
+    const [placa, setPlaca] = useState("");
     const [entrada, setEntrada] = useState("");
     const [saida, setSaida] = useState("");
 
@@ -36,6 +42,23 @@ function Detalhes() {
         const horaSaida = new Date(`01/01/2020 ${saida}`);
         const diferencaHoras = (horaSaida - horaEntrada) / (1000 * 60 * 60);
         return diferencaHoras * (parkingLot ? parkingLot.hourlyRate : 0);
+    };
+
+    const handleConfirmar = (e) => {
+        e.preventDefault();
+
+        const reserva = {
+            id: Date.now(), // Usando o timestamp como ID único
+            placa,
+            local: parkingLot.name,
+            entrada,
+            saida
+        };
+
+        const reservasExistentes = JSON.parse(localStorage.getItem('reservas')) || [];
+        localStorage.setItem('reservas', JSON.stringify([...reservasExistentes, reserva]));
+
+        navigate('/reservas'); // Redirecionar para a página de reservas após confirmar
     };
 
     return (
@@ -70,31 +93,31 @@ function Detalhes() {
                         <hr />
                         <p>Valor da hora: R$ {parkingLot.hourlyRate.toFixed(2)}</p>
 
-                        <form className={Styles.Form}>
+                        <form className={Styles.Form} onSubmit={handleConfirmar}>
                             <div className={Styles.InputGroup}>
                                 <label htmlFor="nome">Nome Completo:</label>
-                                <input type="text" id="nome" name="nome" required />
+                                <input type="text" id="nome" name="nome" required onChange={(e) => setNome(e.target.value)} />
                             </div>
 
                             <div className={Styles.InputGroupHorizontal}>
                                 <div>
                                     <label htmlFor="cidade">Cidade:</label>
-                                    <input type="text" id="cidade" name="cidade" required />
+                                    <input type="text" id="cidade" name="cidade" required onChange={(e) => setCidade(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="telefone">Telefone:</label>
-                                    <input type="text" id="telefone" name="telefone" required />
+                                    <input type="text" id="telefone" name="telefone" required onChange={(e) => setTelefone(e.target.value)} />
                                 </div>
                             </div>
 
                             <div className={Styles.InputGroupHorizontal}>
                                 <div>
                                     <label htmlFor="modelo">Modelo do Veículo:</label>
-                                    <input type="text" id="modelo" name="modelo" required />
+                                    <input type="text" id="modelo" name="modelo" required onChange={(e) => setModelo(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="placa">Placa do Veículo:</label>
-                                    <input type="text" id="placa" name="placa" required />
+                                    <input type="text" id="placa" name="placa" required onChange={(e) => setPlaca(e.target.value)} />
                                 </div>
                             </div>
 
