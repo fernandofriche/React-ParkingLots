@@ -35,6 +35,10 @@ function Profile() {
         }
     }
 
+    function teste() {
+        navigate('/HomePage')
+    }
+
     const dataBaseUsuario = async () => {
         const user = auth.currentUser;
         if (user) {
@@ -125,6 +129,7 @@ function Profile() {
                 <button onClick={handleUpdatePassword}>
                     Atualizar Senha
                 </button>
+                <button onClick={teste}>teste</button>
             </div>
         </>
     );

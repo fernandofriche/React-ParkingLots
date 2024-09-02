@@ -74,7 +74,7 @@
 
     .BtnEsqueceuSenha {
         border: none;
-        margin-left: 40%;
+        margin-left: 30%;
         margin-top: 5%;
         background-color: #F4F4F4;
         color: black;
@@ -82,10 +82,12 @@
 
     .BtnEntrar {
         background-color: #23D45F;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
         margin-top: 20%;
         height: 59px;
         width: 295px;
-        color: white;
         border: none;
         font-family: "Inter", sans-serif;
         border-radius: 10px;
@@ -105,7 +107,7 @@
     }
 
     .DivInputs p {
-        margin-top: 2%;
+        margin-top: 10%;
     }
 
     .BtnRegistrar {
@@ -116,7 +118,8 @@
         background-color: #F4F4F4;
     }
 
-    .BtnRegistrar:hover,.BtnEsqueceuSenha:hover {
+    .BtnRegistrar:hover,
+    .BtnEsqueceuSenha:hover {
         color: #23D45F;
     }
 
@@ -130,12 +133,14 @@
         cursor: pointer;
     }
 
-    .BtnGoogle {
+    .DivGoogle {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px 20px;
-        margin-left: 23%;
+        margin-top: 5%;
+    }
+
+    .BtnGoogle {
         margin-top: 5%;
         background-color: white;
         border: 1px solid #ddd;
@@ -146,6 +151,7 @@
         color: #757575;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        padding: 10px 20px;
     }
 
     .BtnGoogle:hover {
@@ -158,6 +164,28 @@
         height: 20px;
         margin-right: 10px;
     }
+
+    .PasswordContainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .PasswordContainer input {
+        padding-right: 30px;
+        /* Adiciona espaço para a imagem no lado direito */
+    }
+
+    .PasswordToggle {
+        position: absolute;
+        right: 20px;
+        /* Ajuste conforme necessário */
+        margin-top: 15px;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
 /* Responsividade */
